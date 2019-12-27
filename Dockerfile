@@ -3,6 +3,7 @@ ARG BASE_CONTAINER=jupyter/scipy-notebook:7a0c7325e470
 FROM $BASE_CONTAINER
 
 # Additional conda packages
+RUN conda update -n base conda
 RUN conda install --yes black jupyterlab_code_formatter flake8
 
 # Linting & formatting extensions
