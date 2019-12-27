@@ -1,0 +1,11 @@
+version: '3'
+
+services:
+  web:
+    build: .
+    image: dynobo/notebooks:v1.0
+    command: start.sh jupyter lab --NotebookApp.token='dynobo'
+    ports:
+      - "8888:8888"
+    volumes:
+      - $PWD/notebooks:/home/jovyan/
