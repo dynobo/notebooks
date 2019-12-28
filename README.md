@@ -18,4 +18,4 @@ Using [Binder](https://mybinder.org):
 From local repository:
 
 1. Start container: `docker-compose up`
-2. Open Jupyter in Browser: <http://127.0.0.1:8888/?token=dynobo>
+2. Open Jupyter in Browser (URL with token is printed in terminal)

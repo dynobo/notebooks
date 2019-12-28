@@ -2,9 +2,8 @@ version: '3'
 
 services:
   web:
-    build: .
-    image: dynobo/notebooks:v1.0
-    command: start.sh jupyter lab --NotebookApp.token='dynobo'
+    build: dynobo/docker-jupyter-extended:0.1.1
+    command: start.sh jupyter lab
     ports:
       - "8888:8888"
     volumes:
