@@ -8,14 +8,19 @@
 <a href="https://opensource.org/licenses/mit-license.php"><img alt="License: MIT" src="https://badges.frapsoft.com/os/mit/mit.png?v=103"></a>
 </p>
 
-## Start Notebook Server
+## Quickstart
 
-Using [Binder](https://mybinder.org):
+View static versions:
+
+1. Open the [notebooks on GitHub](https://github.com/dynobo/notebooks/tree/master/notebooks)
+
+Interactive version using [Binder](https://mybinder.org):
 
 1. Visit <https://mybinder.org/v2/gh/dynobo/notebooks/master>
 2. Grab a coffee, while notebook is starting...
 
-From local repository:
+Run locally with full control & all features *(needs docker-compose)*:
 
-1. Start container: `docker-compose up`
-2. Open Jupyter in Browser (URL with token is printed in terminal)
+1. Clone repo: `git clone https://github.com/dynobo/notebooks.git`
+2. Start container: `docker-compose up`
+3. Open Jupyter in Browser (URL with token is printed in terminal)
