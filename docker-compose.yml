@@ -2,9 +2,10 @@ version: '3'
 
 services:
   web:
-    build: dynobo/docker-jupyter-extended:0.1.1
+    image: dynobo/docker-jupyter-extended:0.1.4
+    #build: ../docker-jupyter-extended/
     command: start.sh jupyter lab
     ports:
       - "8888:8888"
     volumes:
-      - $PWD/notebooks:/home/jovyan/
+      - $PWD/notebooks:/home/jovyan/notebooks
