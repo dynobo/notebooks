@@ -2,6 +2,9 @@
 ARG BASE_CONTAINER=jupyter/scipy-notebook:7a0c7325e470
 FROM $BASE_CONTAINER
 
+# Remove work dir (only needed for backward-compatibility)
+RUN rm -rf /home/$NB_USER/work
+
 # Additional conda packages
 RUN conda update -n base conda
 RUN conda install --yes black jupyterlab_code_formatter flake8
