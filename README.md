@@ -17,10 +17,18 @@ View static versions:
 Interactive version using [Binder](https://mybinder.org):
 
 1. Visit <https://mybinder.org/v2/gh/dynobo/notebooks/master>
-2. Grab a coffee, while notebook is starting...
+2. Grab a coffee, while the notebook is starting...
 
 Run locally with full control & all features *(needs docker-compose)*:
 
 1. Clone repo: `git clone https://github.com/dynobo/notebooks.git`
-2. Start container: `docker-compose up`
-3. Open Jupyter in Browser (URL with token is printed in terminal)
+2. Start the container: `docker-compose up`
+3. Open Jupyter in Browser (URL with the token is printed in terminal)
+
+## Notebooks
+
+### [Hey Alexa, how many babies are named after you?](https://github.com/dynobo/notebooks/blob/master/notebooks/2020-02-Alexa.ipynb)
+
+**Visualizing the development of naming newborns "Alexa" in different countries over the last twenty years.**
+
+<a href="https://github.com/dynobo/notebooks/blob/master/notebooks/assets/alexa/hey_alexa.png"><img src="https://github.com/dynobo/notebooks/blob/master/notebooks/assets/alexa/hey_alexa.png" width="200"/></a>

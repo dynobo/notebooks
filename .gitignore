@@ -5,7 +5,11 @@
 .vscode
 .ipython 
 .bash_history
-notebooks/data
+
+## Alexa
+notebooks/data/alexa
+notebooks/assets/alexa/echo.png
+notebooks/assets/alexa/assistant.ttf
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
