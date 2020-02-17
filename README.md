@@ -1,6 +1,6 @@
 # Dynobo's Notebooks
 
-***Selection of my jupyter notebooks***
+***Selection of some jupyter notebooks I worked on for fun***
 
 <p align="center">
 <a href="https://mybinder.org/v2/gh/dynobo/notebooks/master"><img alt="Launch: binder" src="https://mybinder.org/badge_logo.svg"></a>
