@@ -3,7 +3,7 @@ version: '3'
 services:
   web:
     #build: ../docker-jupyter-extended/
-    image: dynobo/docker-jupyter-extended:0.1.6
+    image: dynobo/docker-jupyter-extended:0.2.0
     command: start.sh jupyter lab
     ports:
       - "8888:8888"

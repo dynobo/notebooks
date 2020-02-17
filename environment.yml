@@ -1,0 +1,9 @@
+# Only used for mybinder.org, the docker image comes with everything included
+
+name: mybinder
+dependencies:
+  - python=3.7.3
+  - pandas=0.25.3
+  - numpy=1.17.3
+  - matplotlib=3.1.2
+  - seaborn=0.9.0

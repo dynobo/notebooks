@@ -5,7 +5,9 @@
 .vscode
 .ipython 
 .bash_history
-notebooks/data
+
+## Alexa
+notebooks/data/alexa/names_ch.zip
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
