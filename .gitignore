@@ -7,9 +7,7 @@
 .bash_history
 
 ## Alexa
-notebooks/data/alexa
-notebooks/assets/alexa/echo.png
-notebooks/assets/alexa/assistant.ttf
+notebooks/data/alexa/names_ch.zip
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
