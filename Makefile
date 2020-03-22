@@ -65,8 +65,6 @@ push: build-prod
 version:
 	@echo $(TAG)
 
-.PHONY: clean image-clean build-prod push test
-
 clean:
 	rm -rf .pytest_cache .coverage .pytest_cache coverage.xml
 
