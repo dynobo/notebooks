@@ -22,8 +22,14 @@ COPY --from=tester /venv /venv
 COPY --from=tester /app /app
 
 WORKDIR /app
+RUN chmod g+rwx /app
+RUN mkdir /.local
+RUN chmod g+rwx /.local
 
-ENTRYPOINT ["/venv/bin/python3", "-m", "notebooks"]
+EXPOSE 8888
+
+ENTRYPOINT ["/venv/bin/jupyter", "lab", "--ip=0.0.0.0", "--notebook-dir=/app/notebooks", "--port=8888"]
+
 USER 1001
 
 LABEL name={NAME}
