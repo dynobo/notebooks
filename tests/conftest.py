@@ -4,8 +4,9 @@ import pytest
 LOGGER = logging.getLogger(__name__)
 
 
-@pytest.fixture(scope='function')
-def example_fixture():
-    LOGGER.info("Setting Up Example Fixture...")
-    yield
-    LOGGER.info("Tearing Down Example Fixture...")
+@pytest.fixture(scope="function")
+def nb_files():
+    prefix = "notebooks/"
+    notebooks = ["2020-02-Alexa.ipynb", "2020-Tetris.ipynb"]
+    for nb in notebooks:
+        yield prefix + nb
