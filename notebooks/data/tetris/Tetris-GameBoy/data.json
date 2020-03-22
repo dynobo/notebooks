@@ -1,0 +1,44 @@
+{
+  "info": {
+    "frame_delay": {
+      "address": 65434,
+      "type": "|d1"
+    },
+    "frame_delay_remaining": {
+      "address": 49683,
+      "type": "|d1"
+    },
+    "level": {
+      "address": 40177,
+      "type": "|d1"
+    },
+    "lines_cleared": {
+      "address": 65438,
+      "type": "|d2"
+    },
+    "lines_cleared_d1": {
+      "address": 39249,
+      "type": "|d1"
+    },
+    "lines_cleared_d2": {
+      "address": 39248,
+      "type": "|d1"
+    },
+    "lines_cleared_d3": {
+      "address": 39247,
+      "type": "|d1"
+    },
+    "preview_piece": {
+      "address": 49683,
+      "type": "|d1"
+    },
+    "score": {
+      "address": 49312,
+      "type": "<d4"
+    },
+    "screen_state": {
+      "address": 65505,
+      "type": "|d1"
+    }
+  }
+}

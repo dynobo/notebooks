@@ -1,0 +1,23 @@
+{
+  "done": {
+    "variables": {
+      "screen_state": {
+        "op": "equal",
+        "reference": 3
+      }
+    }
+  },
+  "reward": {
+    "variables": {
+      "lines_cleared": {
+        "op": "equal",
+        "reference": 1,
+        "reward": 1.0
+      },
+      "score": {
+        "op": "positive",
+        "reward": 1.0
+      }
+    }
+  }
+}

@@ -8,6 +8,7 @@
 
 ## Alexa
 notebooks/data/alexa/names_ch.zip
+notebooks/data/tetris/Tetris-GameBoy/rom.gb
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
