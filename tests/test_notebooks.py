@@ -12,13 +12,13 @@ LOGGER = logging.getLogger(__name__)
 def log_error_list(errors):
     for idx, error in enumerate(errors):
         LOGGER.error("=" * 60)
-        LOGGER.error(f"ERROR NO. {idx+1}:")
+        LOGGER.error("ERROR NO. %s:", idx + 1)
         for k, v in error.items():
             if k == "traceback":
-                LOGGER.error(f"{k}:")
+                LOGGER.error("%s:", k)
                 sys.stdout.write("\n".join(v))
             else:
-                LOGGER.error(f"{k:<12}: {v}")
+                LOGGER.error("%s: %s", k, v)
 
 
 def notebook_run(nb_file):
@@ -37,7 +37,7 @@ def notebook_run(nb_file):
         ep = ExecutePreprocessor(timeout=600, kernel_name="python3")
         ep.preprocess(nb, {"metadata": {"path": "notebooks/"}})
     except CellExecutionError:
-        LOGGER.error(f"Error while executing notebook!")
+        LOGGER.error("Error while executing notebook!")
         raise
     finally:
         errors = [
@@ -59,6 +59,6 @@ def test_execute_notebooks(nb_files):
         nb_files {list} -- List of Paths of ipynb to test
     """
     for nb_file in nb_files:
-        LOGGER.info("Testing '" + nb_file + "' ...")
-        nb, errors = notebook_run(nb_file)
+        LOGGER.info("Testing '%s' ...", nb_file)
+        _, errors = notebook_run(nb_file)
         assert errors == []
