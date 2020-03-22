@@ -8,5 +8,4 @@ LOGGER = logging.getLogger(__name__)
 def nb_files():
     prefix = "notebooks/"
     notebooks = ["2020-02-Alexa.ipynb", "2020-Tetris.ipynb"]
-    for nb in notebooks:
-        yield prefix + nb
+    return [prefix + nb for nb in notebooks]

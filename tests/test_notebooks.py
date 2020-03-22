@@ -46,6 +46,7 @@ def notebook_run(path):
 
 
 def test_execute_notebooks(nb_files):
-    LOGGER.info("Testing '" + nb_files + "' ...")
-    nb, errors = notebook_run(nb_files)
-    assert errors == []
+    for nb_file in nb_files:
+        LOGGER.info("Testing '" + nb_file + "' ...")
+        nb, errors = notebook_run(nb_file)
+        assert errors == []
