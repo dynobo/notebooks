@@ -13,7 +13,7 @@ RUN /venv/bin/pip install -r /requirements-dev.txt
 FROM builder-venv AS jupyter-extender
 
 RUN curl -sL https://deb.nodesource.com/setup_13.x | bash && \
-    apt-get -y install nodejs && \
+    apt-get -y install nodejs
 RUN /venv/bin/jupyter labextension install \
     @jupyterlab/toc@3.0.0 \
     @ijmbarr/jupyterlab_spellchecker@0.1.6 \
