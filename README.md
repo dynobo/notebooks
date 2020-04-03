@@ -1,6 +1,6 @@
 # Dynobo's Notebooks
 
-***Selection of some jupyter notebooks I worked on for fun***
+**_Selection of some jupyter notebooks I worked on for fun_**
 
 <p align="center">
 <a href="https://mybinder.org/v2/gh/dynobo/notebooks/master"><img alt="Launch: binder" src="https://mybinder.org/badge_logo.svg"></a>
@@ -19,13 +19,17 @@ View **static versions**:
 1. Visit <https://mybinder.org/v2/gh/dynobo/notebooks/master>
 2. Grab a coffee, while the notebook is starting...
 
-**Run locally** with full control & all features *(needs docker-compose)*:
+**Run locally** with full control & all features _(needs docker-compose)_:
 
 1. Clone repo: `git clone https://github.com/dynobo/notebooks.git`
-2. Start the container: `docker-compose up`
+2. Start the container: `docker-compose up jupyterlab`
 3. Open Jupyter in Browser (URL with the token is printed in terminal)
 
+**Execute unit tests:**
+
 ## Notebooks
+
+1. Run: `docker-compose up test`
 
 ### [Hey Alexa, how many babies are named after you?](https://github.com/dynobo/notebooks/blob/master/notebooks/2020-02-Alexa.ipynb) (02/2020)
 
