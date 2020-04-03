@@ -1,0 +1,16 @@
+version: "3"
+
+services:
+  jupyterlab:
+    build: .
+    #command: start.sh jupyter lab
+    ports:
+      - "8888:8888"
+    volumes:
+      - $PWD/notebooks:/home/notebooks
+
+  test:
+    build: .
+    command: /venv/bin/pytest
+    volumes:
+      - $PWD:/home
